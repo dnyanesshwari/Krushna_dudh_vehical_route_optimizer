@@ -9,7 +9,7 @@ def generate_block_timetable(data, year, month):
     """
     Generate block-style timetable:
     Each route has blocks of continuous dates with same vehicle.
-    (KEEPING LOGIC AS YOU PROVIDED — DO NOT CHANGE)
+    
     """
 # --- Flexible assignment for any Excel change ---
     routes = data['RUTE NAME'].dropna().tolist()
@@ -64,7 +64,7 @@ def generate_block_timetable(data, year, month):
 def generate_summary(timetable_blocks, fixed_vehicles, days_in_month):
     """
     Summary: Count working days vs holidays for each vehicle
-    (keeps your original semantics)
+    
     """
     summary = []
     for v in fixed_vehicles:
